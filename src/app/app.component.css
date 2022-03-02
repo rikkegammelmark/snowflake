@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+}
+
+.item {
+  width: 50%;
+  padding-right: 16px;
+}
+
+.item:last-child {
+  padding-right: 0px;
+}
