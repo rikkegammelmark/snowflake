@@ -1,8 +1,8 @@
 <div class="content">
   <div class="item">
-    <app-editor></app-editor>
+    <app-editor (result)="setSvg($event)"></app-editor>
   </div>
   <div class="item">
-    <app-viewer></app-viewer>
+    <app-viewer [svg]="svg"></app-viewer>
   </div>
 </div>

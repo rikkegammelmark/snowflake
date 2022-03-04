@@ -211,7 +211,6 @@ async function load(module, imports) {
 async function init(input) {
     if (typeof input === 'undefined') {
         input = new URL('snowflake_wasm_bg.wasm', import.meta.url);
-        console.log("Here", input)
     }
     const imports = {};
     imports.wbg = {};
@@ -244,3 +243,4 @@ async function init(input) {
 }
 
 export default init;
+

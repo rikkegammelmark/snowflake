@@ -3,4 +3,16 @@
   [(ngModel)]="code"
   class="editor"
 ></ngx-monaco-editor>
-<button (click)="compile()">Compile</button>
+<div class="setting-container">
+  <mat-form-field appearance="outline" class="setting-input">
+    <mat-label>Seed</mat-label>
+    <input matInput [formControl]="seed" required />
+    <mat-error *ngIf="seed.invalid">{{ getErrorMessage(seed) }}</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="setting-input">
+    <mat-label>Depth</mat-label>
+    <input matInput [formControl]="depth" required />
+    <mat-error *ngIf="depth.invalid">{{ getErrorMessage(depth) }}</mat-error>
+  </mat-form-field>
+</div>
+<button mat-stroked-button (click)="compile()">Compile</button>

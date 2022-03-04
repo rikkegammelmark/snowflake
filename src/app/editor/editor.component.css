@@ -1,3 +1,13 @@
 .editor {
   height: 500px;
 }
+
+.setting-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.setting-input {
+  flex-grow: 1;
+}
